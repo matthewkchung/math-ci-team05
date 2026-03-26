@@ -1,5 +1,3 @@
-const unused = 42;
-
 export function add(a: number, b: number): number {
   return a + b;
 }
@@ -54,7 +52,7 @@ export function clamp(value: number, min: number, max: number): number {
 }
 
 export function quadratic(a: number, b: number, c: number): number[] | null {
-  let discriminant = power(b, 2) - 4 * a * c;
+  const discriminant = power(b, 2) - 4 * a * c;
   if (discriminant <= 0) return null;
 
   const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
