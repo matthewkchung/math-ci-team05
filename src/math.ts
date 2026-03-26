@@ -39,7 +39,7 @@ export function average(numbers: number[]): number | null {
 
   if (numbers.length === 0) return null;
 
-  for (let number of numbers) {
+  for (const number of numbers) {
     i += 1;
     result = result + number;
   }
